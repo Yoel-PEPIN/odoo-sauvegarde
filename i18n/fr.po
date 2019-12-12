@@ -1,0 +1,124 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* autosauvegarde
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-05 16:40+0000\n"
+"PO-Revision-Date: 2019-12-05 16:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: autosauvegarde
+#: model:ir.model.fields,field_description:autosauvegarde.field_autosauvegarde_save__active
+msgid "Active"
+msgstr "Actif"
+
+#. module: autosauvegarde
+#: model:ir.model.fields,field_description:autosauvegarde.field_autosauvegarde_save__nb_days_save
+msgid "BackUp Expiring days"
+msgstr "Jours d'expiration de la sauvegarde"
+
+#. module: autosauvegarde
+#: model:ir.model.fields,field_description:autosauvegarde.field_autosauvegarde_save__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: autosauvegarde
+#: model:ir.model.fields,field_description:autosauvegarde.field_autosauvegarde_save__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: autosauvegarde
+#: model:ir.model.fields,field_description:autosauvegarde.field_autosauvegarde_save__display_name
+msgid "Display Name"
+msgstr "Afficher Nom"
+
+#. module: autosauvegarde
+#: model:ir.model.fields,field_description:autosauvegarde.field_autosauvegarde_save__ftp_path
+msgid "FTP Folder"
+msgstr "Dossier FTP"
+
+#. module: autosauvegarde
+#: model_terms:ir.ui.view,arch_db:autosauvegarde.FTP_server_form_view
+msgid "FTP Server"
+msgstr "Serveur FTP"
+
+#. module: autosauvegarde
+#: model:ir.model.fields,field_description:autosauvegarde.field_autosauvegarde_save__name
+msgid "FTP Server Name"
+msgstr "Nom du Serveur FTP"
+
+#. module: autosauvegarde
+#: model:ir.actions.act_window,name:autosauvegarde.ftp_list_action
+#: model:ir.ui.menu,name:autosauvegarde.FTP_menu
+msgid "FTP Servers"
+msgstr "Serveurs FTP"
+
+#. module: autosauvegarde
+#: model_terms:ir.ui.view,arch_db:autosauvegarde.FTP_Server_tree_view
+msgid "FTP Tree"
+msgstr "Liste des FTP"
+
+#. module: autosauvegarde
+#: model:ir.model.fields,field_description:autosauvegarde.field_autosauvegarde_save__host
+msgid "Host"
+msgstr "Hôte"
+
+#. module: autosauvegarde
+#: model:ir.model.fields,field_description:autosauvegarde.field_autosauvegarde_save__id
+msgid "ID"
+msgstr "Identité"
+
+#. module: autosauvegarde
+#: model:ir.model.fields,field_description:autosauvegarde.field_autosauvegarde_save____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: autosauvegarde
+#: model:ir.model.fields,field_description:autosauvegarde.field_autosauvegarde_save__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: autosauvegarde
+#: model:ir.model.fields,field_description:autosauvegarde.field_autosauvegarde_save__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: autosauvegarde
+#: model:ir.model.fields,field_description:autosauvegarde.field_autosauvegarde_save__login
+msgid "Login"
+msgstr "Identifiant"
+
+#. module: autosauvegarde
+#: model:ir.model.fields,field_description:autosauvegarde.field_autosauvegarde_save__nb_days_log
+msgid "Logs Expiring days"
+msgstr "Jours d'expiration du rapport"
+
+#. module: autosauvegarde
+#: model:ir.model,name:autosauvegarde.model_autosauvegarde_save
+msgid "Odoo's Save"
+msgstr "Sauvegarde de Odoo"
+
+#. module: autosauvegarde
+#: model:ir.model.fields,field_description:autosauvegarde.field_autosauvegarde_save__pwd
+msgid "Password"
+msgstr "Mot de Passe"
+
+#. module: autosauvegarde
+#: model:ir.actions.server,name:autosauvegarde.sauvegardeur_ir_actions_server
+#: model:ir.cron,cron_name:autosauvegarde.sauvegardeur
+#: model:ir.cron,name:autosauvegarde.sauvegardeur
+msgid "Sauvegarde"
+msgstr "Sauvegarde"
+
+#. module: autosauvegarde
+#: model:ir.ui.menu,name:autosauvegarde.main_save_menu
+msgid "Save"
+msgstr "Sauvegarde"
