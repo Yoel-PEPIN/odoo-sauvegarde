@@ -26,6 +26,7 @@
                 <field name="login"/>
                 <field name="pwd"/>
                 <field name="ftp_path"/>
+                <field name="filestore_path"/>
                 <field name="nb_days_save"/>
                 <field name="active"/>
             </group>
@@ -44,6 +45,7 @@
                 <field name="login"/>
                 <field name="pwd"/>
                 <field name="ftp_path"/>
+                <field name="filestore_path"/>
                 <field name="nb_days_save"/>
                 <field name="active"/>
             </tree>

@@ -24,7 +24,7 @@ def supplogs(lg):
 def filestoring(lg,flt):
     if os.path.isdir(flt):
         tf = tarfile.open("temp/filestore.tar.gz", mode="w:gz", compresslevel=9)
-        for file in glob.glob("filestore/*"):
+        for file in glob.glob(flt + "/*"):
             lg.info(file + ' compressed')
             tf.add(file)
 
