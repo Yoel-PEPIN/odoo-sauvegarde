@@ -21,8 +21,8 @@ def supplogs(lg):
                 os.remove('logs/' + n)
 
 
-def filestoring(lg):
-    if os.path.isdir('filestore'):
+def filestoring(lg,flt):
+    if os.path.isdir(flt):
         tf = tarfile.open("temp/filestore.tar.gz", mode="w:gz", compresslevel=9)
         for file in glob.glob("filestore/*"):
             lg.info(file + ' compressed')
@@ -132,6 +132,7 @@ class Sauvegarde(models.Model):
     nb_days_save = fields.Integer('BackUp Expiring days', default=7)
     nb_days_log = fields.Integer('Logs Expiring days', default=7)
     ftp_path = fields.Char('FTP Folder', default='')
+    filestore_path = fields.Char('Filestore Folder', default='filestore')
 
     @api.model
     def sauvegarde(self):
@@ -149,7 +150,8 @@ class Sauvegarde(models.Model):
         lg.info('Start Log')
 
         splogs = Thread(None, supplogs(lg))
-        flstr = Thread(None, filestoring(lg))
+        flt = self.search([])[0].filestore_path
+        flstr = Thread(None, filestoring(lg,flt))
         db = str(self._cr.dbname)
         dbdp = Thread(None, dbdumping(lg, db))
         if not os.path.isdir('temp'):
