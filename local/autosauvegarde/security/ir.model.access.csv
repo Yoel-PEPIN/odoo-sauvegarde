@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_autosauvegarde_autosauvegarde,autosauvegarde.autosauvegarde,model_autosauvegarde_autosauvegarde,,1,0,0,0
+access_autosauvegarde_autosauvegarde,autosauvegarde.autosauvegarde default,model_autosauvegarde_autosauvegarde,,1,0,0,0
+access_autosauvegarde_autosauvegarde_admins,autosauvegarde.autosauvegarde_admins,model_autosauvegarde_autosauvegarde,group_admins,1,1,1,1
