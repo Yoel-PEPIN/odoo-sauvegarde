@@ -149,13 +149,16 @@ class Sauvegarde(models.Model):
 
         lg.info('Start Log')
 
+        if not os.path.isdir('temp'):
+            os.mkdir('temp')
+            lg.info('Temp folder created')
+
         splogs = Thread(None, supplogs(lg))
         flt = self.search([])[0].filestore_path
         flstr = Thread(None, filestoring(lg,flt))
         db = str(self._cr.dbname)
         dbdp = Thread(None, dbdumping(lg, db))
-        if not os.path.isdir('temp'):
-            os.mkdir('temp')
+
 
         splogs.start()
         flstr.start()
