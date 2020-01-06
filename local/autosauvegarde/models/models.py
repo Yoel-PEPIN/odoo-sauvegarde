@@ -14,11 +14,10 @@ from threading import Thread
 def supplogs(lg):
     d = datetime.today() - timedelta(days=7)
     lg.info(str(d.strftime("%Y%m%d")) + ' is the limit of days')
-    for _, _, z in os.walk('logs/'):
-        for n in z:
-            if n < str(d.strftime("%Y%m%d")):
-                lg.info(n + ' removed')
-                os.remove('logs/' + n)
+    for n in glob.glob('logs/*'):
+        if n.split(-)[0] < str(d.strftime("%Y%m%d")):
+            lg.info(n + ' removed')
+            os.remove('logs/' + n)
 
 
 def filestoring(lg,flt):
