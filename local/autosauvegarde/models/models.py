@@ -16,8 +16,11 @@ def supplogs(lg):
     lg.info(str(d.strftime("%Y%m%d")) + ' is the limit of days')
     for n in glob.glob('logs/*'):
         if n.split(-)[0] < str(d.strftime("%Y%m%d")):
-            lg.info(n + ' removed')
-            os.remove('logs/' + n)
+            try:
+                lg.info(n + ' removed')
+                os.remove('logs/' + n)
+            except(FileNotFoundError):
+                pass
 
 
 def filestoring(lg,flt):
