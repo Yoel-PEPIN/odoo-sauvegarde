@@ -15,7 +15,7 @@ def supplogs(lg):
     d = datetime.today() - timedelta(days=7)
     lg.info(str(d.strftime("%Y%m%d")) + ' is the limit of days')
     for n in glob.glob('logs/*'):
-        if n.split(-)[0] < str(d.strftime("%Y%m%d")):
+        if (n.split(-)[0] < str(d.strftime("%Y%m%d"))):
             try:
                 lg.info(n + ' removed')
                 os.remove('logs/' + n)
